@@ -1,0 +1,17 @@
+# input
+toggle = False # set to false to do Fahrenheit to Celsius
+celsiusInput = 14
+fahrenheitInput = 55
+output = None
+# celsius to fahrenheit
+def celsiusToFahrenheit():
+    output = celsiusInput * 9/5 + 32
+    return output
+# fahrenheit to celsius
+def fahrenheitToCelsius():
+    output = (fahrenheitInput - 32) * 5/9
+    return output
+if toggle == True:
+    print(celsiusToFahrenheit())
+else:
+    print(fahrenheitToCelsius())
